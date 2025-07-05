@@ -260,7 +260,7 @@ function generateQrCode() {
     return;
   }
 
-  const url = `https://shreyakushwaha39.github.io/ecopack-insight/product.html?id=${product.id}`;
+  const url = `https://shreyakushwaha39.github.io/Eco-pack-insight/product-pages/${product.id}.html`;
 
   const qrContainer = document.createElement('div');
   qrContainer.id = 'qrCodeImg';
