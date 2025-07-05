@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrandA Shampoo</title>
+  <title>Biscuits Packet</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
@@ -45,24 +45,24 @@
 </head>
 <body>
   <div class="container" id="pdf-content">
-    <img src="../images/1001.jpeg" alt="BrandA Shampoo">
-    <h1>BrandA Shampoo</h1>
-    <p><strong>Category:</strong> Personal Care</p>
+    <img src="../images/1027.jpg" alt="Biscuits Packet">
+    <h1>Biscuits Packet</h1>
+    <p><strong>Category:</strong> Snacks</p>
 
     <div class="section">
       <h3>Description</h3>
-      <p>BrandA Shampoo is formulated with plant-based, biodegradable ingredients and packaged in a recyclable PET bottle with a paper label. The formula avoids microplastics and harsh chemicals, making it safer for waterways and skin. The packaging is mostly plastic, but the use of a paper label and clear recycling instructions help reduce its environmental impact.</p>
+      <p>Biscuits Packet is made from flexible plastic for freshness. These wrappers are not recyclable in most municipal programs. Look for brands with compostable packaging.</p>
     </div>
 
     <div class="section">
       <h3>Material Composition</h3>
       <canvas id="materialsChart"></canvas>
-      <ul><li>PET Plastic: 80%</li><li>Paper Label: 20%</li></ul>
+      <ul><li>Plastic: 100%</li></ul>
     </div>
 
     <div class="section">
-      <p><strong>Eco Score:</strong> Medium</p>
-      <p><strong>Qrcode:</strong> 1000000000000</p>
+      <p><strong>Eco Score:</strong> Low</p>
+      <p><strong>Barcode:</strong> 1000000000026</p>
     </div>
   </div>
 
@@ -75,9 +75,9 @@
     new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['PET Plastic', 'Paper Label'],
+        labels: ['Plastic'],
         datasets: [{
-          data: [80, 20],
+          data: [100],
           backgroundColor: ['#81c784', '#ffd54f', '#e57373', '#64b5f6', '#ba68c8']
         }]
       },
@@ -93,7 +93,7 @@
       const element = document.getElementById('pdf-content');
       const opt = {
         margin: 0.5,
-        filename: 'BrandA Shampoo.pdf',
+        filename: 'Biscuits Packet.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }

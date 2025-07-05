@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrandA Shampoo</title>
+  <title>Face Cream Jar</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
@@ -45,24 +45,24 @@
 </head>
 <body>
   <div class="container" id="pdf-content">
-    <img src="../images/1001.jpeg" alt="BrandA Shampoo">
-    <h1>BrandA Shampoo</h1>
+    <img src="../images/1005.webp" alt="Face Cream Jar">
+    <h1>Face Cream Jar</h1>
     <p><strong>Category:</strong> Personal Care</p>
 
     <div class="section">
       <h3>Description</h3>
-      <p>BrandA Shampoo is formulated with plant-based, biodegradable ingredients and packaged in a recyclable PET bottle with a paper label. The formula avoids microplastics and harsh chemicals, making it safer for waterways and skin. The packaging is mostly plastic, but the use of a paper label and clear recycling instructions help reduce its environmental impact.</p>
+      <p>This face cream comes in a heavy glass jar with a plastic lid. Glass is infinitely recyclable and ideal for reuse. The product is vegan and cruelty-free, and the packaging is designed for easy recycling or upcycling after use.</p>
     </div>
 
     <div class="section">
       <h3>Material Composition</h3>
       <canvas id="materialsChart"></canvas>
-      <ul><li>PET Plastic: 80%</li><li>Paper Label: 20%</li></ul>
+      <ul><li>Glass: 80%</li><li>Plastic Lid: 20%</li></ul>
     </div>
 
     <div class="section">
-      <p><strong>Eco Score:</strong> Medium</p>
-      <p><strong>Qrcode:</strong> 1000000000000</p>
+      <p><strong>Eco Score:</strong> High</p>
+      <p><strong>Barcode:</strong> 1000000000004</p>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['PET Plastic', 'Paper Label'],
+        labels: ['Glass', 'Plastic Lid'],
         datasets: [{
           data: [80, 20],
           backgroundColor: ['#81c784', '#ffd54f', '#e57373', '#64b5f6', '#ba68c8']
@@ -93,7 +93,7 @@
       const element = document.getElementById('pdf-content');
       const opt = {
         margin: 0.5,
-        filename: 'BrandA Shampoo.pdf',
+        filename: 'Face Cream Jar.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
