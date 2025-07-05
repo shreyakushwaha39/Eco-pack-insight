@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoPack Insight</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="scripts/main.js"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fa-solid fa-leaf"></i> EcoPack Insight</div>
+    <nav>
+      <button class="active" onclick="showSection('products', this)"><i class="fa fa-box"></i> Products</button>
+      <button onclick="showSection('compare', this)"><i class="fa fa-balance-scale"></i> Compare</button>
+      <button onclick="showSection('ai-eco', this)"><i class="fa fa-robot"></i> AI Eco Score</button>
+      <button onclick="showSection('barcode', this)"><i class="fa fa-barcode"></i> Search & Scan</button>
+      <button onclick="showSection('about', this)"><i class="fa fa-info-circle"></i> About</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Products Section -->
+    <section id="products" class="active">
+      <h2><i class="fa fa-box"></i> Product List</h2>
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" />
+      <div id="productList"></div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+
+    <!-- Comparison Section -->
+    <section id="compare">
+      <h2><i class="fa fa-balance-scale"></i> Eco Comparison Tool</h2>
+      <div id="compareSelect"></div>
+      <div id="compareResults"></div>
+      <canvas id="comparePieChart" width="400" height="400"></canvas>
+    </section>
+
+    <!-- AI Eco Score Estimator -->
+    <section id="ai-eco">
+      <h2><i class="fa fa-robot"></i> AI Eco Score Estimator</h2>
+      <div class="ai-eco-box">
+        <label for="materialInput">Enter packaging materials (comma separated):</label>
+        <input type="text" id="materialInput" placeholder="e.g. PET Plastic, Cardboard" />
+        <button onclick="estimateEcoScore()"><i class="fa fa-magic"></i> Estimate</button>
+        <div id="ecoScoreResult"></div>
+        <canvas id="aiEcoPieChart" width="200" height="200"></canvas>
+      </div>
+    </section>
+
+    <!-- Search & Scan Section -->
+    <section id="barcode">
+    <h2><i class="fa fa-barcode"></i> Search & Scan Products</h2>
+  <div class="qr-box">
+    <label for="qrInput">Generate QR Code:</label>
+    <input type="text" id="qrInput" placeholder="Enter product name or barcode..." />
+    <button onclick="generateQrCode()">Generate QR</button>
+    <div id="qrOutput"></div>
+  </div>
+</section>
+
+  
+
+    <!-- About Section -->
+    <section id="about">
+      <h2><i class="fa fa-info-circle"></i> About EcoPack Insight</h2>
+      <div class="about-box">
+        <p>
+          EcoPack Insight helps you assess the environmental impact of product packaging. Explore product details, compare eco scores, and search & scan barcodes for instant information!
+        </p>
+        <h3>Material Impact Guide</h3>
+        <ul>
+            <li><b>Glass:</b> Highest score – reusable and endlessly recyclable</li>
+            <li><b>Aluminum:</b> High score – highly recyclable, moderately reusable</li>
+            <li><b>Paper/Cardboard:</b> Medium score – widely recyclable, rarely reusable</li>
+            <li><b>Plastic:</b> Low score – low reuse and recycling rates</li>
+        </ul>
+        <p>Choose materials with higher Eco Scores for a more sustainable future!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoPack Insight &mdash; Designed with <i class="fa fa-heart" style="color:#e57373"></i></p>
+  </footer>
+
+  
+</body>
+</html>
