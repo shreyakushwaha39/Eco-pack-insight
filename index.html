@@ -21,7 +21,7 @@
       <button class="active" onclick="showSection('products', this)"><i class="fa fa-box"></i> Products</button>
       <button onclick="showSection('compare', this)"><i class="fa fa-balance-scale"></i> Compare</button>
       <button onclick="showSection('ai-eco', this)"><i class="fa fa-robot"></i> AI Eco Score</button>
-      <button onclick="showSection('barcode', this)"><i class="fa fa-barcode"></i> Search & Scan</button>
+      <button onclick="showSection('qrcode', this)"><i class="fa fa-qrcode"></i> Search & Scan</button>
       <button onclick="showSection('about', this)"><i class="fa fa-info-circle"></i> About</button>
     </nav>
   </header>
@@ -63,11 +63,11 @@
     </section>
 
     <!-- Search & Scan Section -->
-    <section id="barcode">
-    <h2><i class="fa fa-barcode"></i> Search & Scan Products</h2>
+    <section id="qrcode">
+    <h2><i class="fa fa-qrcode"></i> Search & Scan Products</h2>
   <div class="qr-box">
     <label for="qrInput">Generate QR Code:</label>
-    <input type="text" id="qrInput" placeholder="Enter product name or barcode..." />
+    <input type="text" id="qrInput" placeholder="Enter product name or qrcode..." />
     <button onclick="generateQrCode()">Generate QR</button>
     <div id="qrOutput"></div>
   </div>
@@ -80,7 +80,7 @@
       <h2><i class="fa fa-info-circle"></i> About EcoPack Insight</h2>
       <div class="about-box">
         <p>
-          EcoPack Insight helps you assess the environmental impact of product packaging. Explore product details, compare eco scores, and search & scan barcodes for instant information!
+          EcoPack Insight helps you assess the environmental impact of product packaging. Explore product details, compare eco scores, and search & scan qrcodes for instant information!
         </p>
         <h3>Material Impact Guide</h3>
         <ul>
