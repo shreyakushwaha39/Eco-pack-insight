@@ -21,10 +21,10 @@ function showSection(id, btn) {
   if (btn) btn.classList.add('active');
 
   // No scanner to reset now
-  if (id === 'barcode') {
-    // Focus the barcode input if needed
+  if (id === 'qrcode') {
+    // Focus the qrcode input if needed
     setTimeout(() => {
-      const input = document.getElementById('manualBarcodeInput');
+      const input = document.getElementById('manualqrcodeInput');
       if (input) input.focus();
     }, 100);
   }
@@ -69,7 +69,7 @@ function showProductModal(id) {
     <p><b>Eco Score:</b> <span class="eco-score ${prod.ecoScore}">${prod.ecoScore}</span></p>
     <canvas id="matPie" width="200" height="200"></canvas>
     <ul>${matList}</ul>
-    <p><b>Barcode:</b> ${prod.barcode}</p>
+    <p><b>Qrcode:</b> ${prod.qrcode}</p>
   `;
   setTimeout(() => {
     new Chart(document.getElementById('matPie'), {
@@ -247,12 +247,12 @@ function generateQrCode() {
   output.innerHTML = '';
 
   if (!input) {
-    output.innerHTML = '<p>Please enter a product name or barcode.</p>';
+    output.innerHTML = '<p>Please enter a product name or qrcode.</p>';
     return;
   }
 
   const product = productsData.find(p => 
-    p.name.toLowerCase().includes(input) || p.barcode === input
+    p.name.toLowerCase().includes(input) || p.qrcode === input
   );
 
   if (!product) {
@@ -266,7 +266,7 @@ function generateQrCode() {
   qrContainer.id = 'qrCodeImg';
   output.innerHTML = `
   <h3>${product.name}</h3>
-  <p><b>Barcode:</b> ${product.barcode}</p>
+  <p><b>Qrcode:</b> ${product.qrcode}</p>
   <div id="qrOnly"></div>
 `;
   output.appendChild(qrContainer);
