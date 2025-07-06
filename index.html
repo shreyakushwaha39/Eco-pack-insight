@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoPack Insight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+<body style="background: url('images/bg2.jpg') center/cover no-repeat fixed, var(--background);">
+  <header style="background: url('images/bg1.jpg') center/cover no-repeat, var(--green-dark); color: #fff;">
+    <div class="logo"><img src="images/logo.png" alt="EcoPack Logo" style="height:32px;vertical-align:middle;margin-right:8px;"> EcoPack Insight</div>
+    <nav>
+      <button class="active" onclick="showSection('products', this)"><i class="fa fa-box"></i> Products</button>
+      <button onclick="showSection('compare', this)"><i class="fa fa-balance-scale"></i> Compare</button>
+      <button onclick="showSection('ai-eco', this)"><i class="fa fa-robot"></i> AI Eco Score</button>
+      <button onclick="showSection('qrcode', this)"><i class="fa fa-qrcode"></i> Search &amp; QR</button>
+      <button onclick="showSection('about', this)"><i class="fa fa-info-circle"></i> About</button>
+    </nav>
+  </header>
+  <main>
+    <section id="products" class="active">
+      <h2><i class="fa fa-box"></i> Product List</h2>
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" />
+      <div id="productList"></div>
+    </section>
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalDetails"></div>
+        <button id="disposalGuideBtn" style="margin-top:1em;background:#1976d2;color:#fff;" onclick="showDisposalGuide()"><i class="fa fa-recycle"></i> Disposal Guide</button>
+      </div>
+    </div>
+    <div id="disposalModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeDisposalModal()">&times;</span>
+        <div id="disposalDetails"></div>
+      </div>
+    </div>
+    <section id="compare">
+      <h2><i class="fa fa-balance-scale"></i> Eco Comparison Tool</h2>
+      <div id="compareSelect"></div>
+      <div id="compareResults"></div>
+    </section>
+    <section id="ai-eco">
+      <h2><i class="fa fa-robot"></i> AI Eco Score Estimator</h2>
+      <div class="ai-eco-box">
+        <label for="materialInput">Enter packaging materials (comma separated):</label>
+        <input type="text" id="materialInput" placeholder="e.g. PET Plastic:60, Cardboard:40" />
+        <div style="color:#1976d2;font-size:0.98em;margin-bottom:0.7em;">
+          <i class="fa fa-info-circle"></i> Enter materials and their percentages, separated by commas. <br>
+          Example: <b>plastic:30, paper:10, glass:20, aluminum:30, others:10</b>
+        </div>
+        <button onclick="estimateEcoScore()"><i class="fa fa-magic"></i> Estimate</button>
+        <div id="ecoScoreResult"></div>
+        <canvas id="aiEcoPieChart" width="200" height="200"></canvas>
+      </div>
+    </section>
+    <section id="qrcode">
+      <h2><i class="fa fa-qrcode"></i> Search &amp; QR Code</h2>
+      <div class="qr-box">
+        <div style="display:flex;gap:0.7em;align-items:center;flex-wrap:wrap;">
+          <label for="qrInput" style="margin-bottom:0;">Generate QR Code:</label>
+          <input type="text" id="qrInput" placeholder="Enter product name or qrcode..." style="width:180px;min-width:120px;max-width:220px;font-size:1em;" />
+          <button onclick="generateQrCode()"><i class="fa fa-qrcode"></i> Generate QR</button>
+          <button id="scanQrBtn" onclick="toggleQrScan()" style="background:#388e3c;color:#fff;"><i class="fa fa-camera"></i> Scan</button>
+        </div>
+        <div id="qrOutput"></div>
+      </div>
+      <hr style="margin:2em 0;">
+      <div class="qr-scan-box">
+        <div id="qr-reader" style="width:300px;max-width:100%;margin:1em auto;display:none;"></div>
+        <div id="qrScanResult"></div>
+      </div>
+    </section>
+    <section id="about">
+      <h2><i class="fa fa-info-circle"></i> About EcoPack Insight</h2>
+      <div class="about-box" style="background:#f4f8f6;border-radius:1em;padding:2em 1.5em;box-shadow:0 2px 12px #b0bec540;max-width:700px;margin:auto;">
+        <div style="display:flex;align-items:center;gap:1em;flex-wrap:wrap;justify-content:center;">
+          <img src="images/logo.png" alt="EcoPack Logo" style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px #b0bec540;">
+          <div>
+            <p style="font-size:1.2em;color:#388e3c;margin:0 0 0.5em 0;"><b>EcoPack Insight</b> helps you assess the environmental impact of product packaging. Explore product details, compare eco scores, and search &amp; scan QR codes for instant information!</p>
+            <p style="margin:0;color:#607d8b;">Empowering sustainable choices for a greener tomorrow.</p>
+          </div>
+        </div>
+        <hr style="margin:2em 0;">
+        <h3 style="color:#2e7d32;"><i class="fa fa-leaf"></i> Why Eco Scores Matter?</h3>
+        <ul style="font-size:1.1em;line-height:1.7;">
+          <li><b>Glass:</b> <span style="color:#388e3c;">Highest score</span> – reusable and endlessly recyclable</li>
+          <li><b>Aluminum:</b> <span style="color:#43a047;">High score</span> – highly recyclable, moderately reusable</li>
+          <li><b>Paper/Cardboard:</b> <span style="color:#fbc02d;">Medium score</span> – widely recyclable, rarely reusable</li>
+          <li><b>Plastic:</b> <span style="color:#e57373;">Low score</span> – low reuse and recycling rates</li>
+        </ul>
+        <div style="margin:2em 0 1em 0;">
+          <h3 style="color:#1976d2;"><i class="fa fa-lightbulb"></i> How to Use This App?</h3>
+          <ol style="font-size:1.05em;line-height:1.6;">
+            <li><b>Browse Products:</b> View eco scores and material breakdowns for each product.</li>
+            <li><b>Compare:</b> Select two products to compare their environmental impact visually.</li>
+            <li><b>AI Eco Score:</b> Enter your own packaging materials to estimate an eco score instantly.</li>
+            <li><b>QR Code:</b> Generate QR codes to quickly access product details on the go.</li>
+          </ol>
+        </div>
+        <div style="background:#e3f2fd;padding:1em 1.5em;border-radius:0.7em;margin:1.5em 0 0 0;">
+          <h4 style="color:#1565c0;margin-bottom:0.5em;"><i class="fa fa-question-circle"></i> Did You Know?</h4>
+          <ul style="margin:0 0 0 1em;font-size:1em;">
+            <li>Recycling one ton of paper saves 17 trees and 7,000 gallons of water.</li>
+            <li>Aluminum can be recycled infinitely without losing quality.</li>
+            <li>Glass is 100% recyclable and can be reused endlessly.</li>
+            <li>Choosing sustainable packaging reduces your carbon footprint.</li>
+          </ul>
+        </div>
+        <p style="margin-top:2em;font-size:1.1em;color:#388e3c;"><b>Choose materials with higher Eco Scores for a more sustainable future!</b></p>
+        <div class="codezilla-block" style="margin:2.5em auto 0 auto;max-width:350px;background:linear-gradient(90deg,#43e97b 0%,#38f9d7 100%);color:#1b5e20;padding:1.2em 1.5em;border-radius:1em;box-shadow:0 4px 24px #38f9d740;display:flex;align-items:center;gap:1em;justify-content:center;font-family:'Montserrat',sans-serif;font-size:1.15em;font-weight:600;letter-spacing:1px;">
+          <img src="images/logo.png" alt="CodeZilla Logo" style="width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px #1b5e2030;">
+          <span>Made by Team <span style="color:#1976d2;font-weight:700;">CodeZilla</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 EcoPack Insight &mdash; Designed with <i class="fa fa-heart" style="color:#e57373"></i></p>
+  </footer>
+</body>
+</html>

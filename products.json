@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1001",
+    "name": "BrandA Shampoo",
+    "category": "Personal Care",
+    "materials": {"PET Plastic": 80, "Paper Label": 20},
+    "ecoScore": "low",
+    "qrcode": "1000000000000",
+    "full_description": "BrandA Shampoo is formulated with plant-based, biodegradable ingredients and packaged in a recyclable PET bottle with a paper label. The formula avoids microplastics and harsh chemicals, making it safer for waterways and skin. The packaging is mostly plastic, but the use of a paper label and clear recycling instructions help reduce its environmental impact."
+  },
+  {
+    "id": "1002",
+    "name": "BrandB Shampoo",
+    "category": "Personal Care",
+    "materials": {"HDPE Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000001",
+    "full_description": "BrandB Shampoo uses a durable HDPE plastic bottle, which is recyclable in many regions. However, the lack of recycled content and a plastic-only design lower its eco score. The shampoo itself is free from parabens and sulfates, but the packaging could be improved by incorporating post-consumer recycled material."
+  },
+  {
+    "id": "1003",
+    "name": "Toothpaste Tube",
+    "category": "Personal Care",
+    "materials": {"Aluminum": 70, "Plastic Cap": 30},
+    "ecoScore": "high",
+    "qrcode": "1000000000002",
+    "full_description": "This toothpaste tube features a recyclable aluminum body and a plastic cap. Aluminum is highly valued in recycling streams, while the plastic cap should be separated before disposal. The tube is designed to minimize waste compared to multi-layer plastic tubes."
+  },
+  {
+    "id": "1004",
+    "name": "Liquid Soap Bottle",
+    "category": "Personal Care",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000003",
+    "full_description": "Liquid Soap Bottle is made entirely from PET plastic, which is recyclable but energy-intensive to produce. The soap formula is gentle and free from synthetic fragrances, but the packaging would benefit from a refill or recycled plastic option."
+  },
+  {
+    "id": "1005",
+    "name": "Face Cream Jar",
+    "category": "Personal Care",
+    "materials": {"Glass": 80, "Plastic Lid": 20},
+    "ecoScore": "highest",
+    "qrcode": "1000000000004",
+    "full_description": "This face cream comes in a heavy glass jar with a plastic lid. Glass is infinitely recyclable and ideal for reuse. The product is vegan and cruelty-free, and the packaging is designed for easy recycling or upcycling after use."
+  },
+  {
+    "id": "1006",
+    "name": "Cereal Box",
+    "category": "Food",
+    "materials": {"Cardboard": 90, "Plastic Liner": 10},
+    "ecoScore": "medium",
+    "qrcode": "1000000000005",
+    "full_description": "Cereal Box uses FSC-certified cardboard for the outer box and a thin plastic liner for freshness. The cardboard is easily recyclable, while the liner should be disposed of according to local plastic recycling rules."
+  },
+  {
+    "id": "1007",
+    "name": "Milk Carton",
+    "category": "Food",
+    "materials": {"Paper": 70, "Plastic": 20, "Aluminum": 10},
+    "ecoScore": "medium",
+    "qrcode": "1000000000006",
+    "full_description": "Milk Carton is a Tetra Pak-style package made of layered paper, plastic, and aluminum. While lightweight and shelf-stable, these cartons require specialized recycling facilities. Always rinse and check local recycling guidelines."
+  },
+  {
+    "id": "1008",
+    "name": "Soda Can",
+    "category": "Beverages",
+    "materials": {"Aluminum": 100},
+    "ecoScore": "high",
+    "qrcode": "1000000000007",
+    "full_description": "Soda Can is made from 100% aluminum, one of the most recycled materials worldwide. Aluminum cans can be recycled indefinitely with minimal loss of quality, making this a top choice for eco-friendly beverage packaging."
+  },
+  {
+    "id": "1009",
+    "name": "Water Bottle",
+    "category": "Beverages",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000008",
+    "full_description": "Water Bottle is made entirely from PET plastic. While PET is recyclable, single-use bottles contribute significantly to plastic pollution. Refill and reuse options are recommended for reducing environmental impact."
+  },
+  {
+    "id": "1010",
+    "name": "Juice Box",
+    "category": "Beverages",
+    "materials": {"Paper": 75, "Plastic": 20, "Aluminum": 5},
+    "ecoScore": "medium",
+    "qrcode": "1000000000009",
+    "full_description": "Juice Box uses a composite material for long shelf life. The paper provides strength, while plastic and aluminum layers keep the juice fresh. Specialized recycling is required; check local facilities."
+  },
+  {
+    "id": "1011",
+    "name": "Chips Bag",
+    "category": "Snacks",
+    "materials": {"Metallized Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000010",
+    "full_description": "Chips Bag is made from metallized plastic, which is not currently recyclable in most areas. This packaging is lightweight but contributes to landfill waste. Look for brands with compostable or recyclable alternatives."
+  },
+  {
+    "id": "1012",
+    "name": "Chocolate Bar",
+    "category": "Snacks",
+    "materials": {"Plastic": 70, "Foil": 30},
+    "ecoScore": "low",
+    "qrcode": "1000000000011",
+    "full_description": "Chocolate Bar packaging combines plastic and foil layers to keep the product fresh. These multi-layer wrappers are difficult to recycle. Some premium brands now use compostable or paper-based wrappers."
+  },
+  {
+    "id": "1013",
+    "name": "Yogurt Cup",
+    "category": "Dairy",
+    "materials": {"Plastic": 80, "Foil Lid": 20},
+    "ecoScore": "low",
+    "qrcode": "1000000000012",
+    "full_description": "Yogurt Cup uses a plastic container with a foil lid. The cup is usually recyclable, but the lid may need to be separated. Always rinse before recycling to prevent contamination."
+  },
+  {
+    "id": "1014",
+    "name": "Butter Tub",
+    "category": "Dairy",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000013",
+    "full_description": "Butter Tub is made from lightweight plastic for convenience. While recyclable, these tubs are often not accepted in all recycling programs. Consider reusing for storage before disposal."
+  },
+  {
+    "id": "1015",
+    "name": "Frozen Peas Bag",
+    "category": "Frozen Food",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000014",
+    "full_description": "Frozen Peas Bag uses flexible plastic to maintain freshness and prevent freezer burn. These bags are rarely recyclable curbside. Some stores offer plastic bag recycling drop-offs."
+  },
+  {
+    "id": "1016",
+    "name": "Ready Meal Tray",
+    "category": "Frozen Food",
+    "materials": {"Plastic": 80, "Cardboard Sleeve": 20},
+    "ecoScore": "low",
+    "qrcode": "1000000000015",
+    "full_description": "Ready Meal Tray combines a plastic tray with a recyclable cardboard sleeve. The sleeve is easily recycled, while the tray may require special handling depending on local facilities."
+  },
+  {
+    "id": "1017",
+    "name": "Detergent Bottle",
+    "category": "Cleaning",
+    "materials": {"HDPE Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000016",
+    "full_description": "Detergent Bottle is made from HDPE plastic, which is recyclable and commonly used for household products. The bottle is sturdy and reusable, but using refill stations can further reduce waste."
+  },
+  {
+    "id": "1018",
+    "name": "Dish Soap Bottle",
+    "category": "Cleaning",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000017",
+    "full_description": "Dish Soap Bottle is made from PET plastic. While recyclable, single-use bottles contribute to plastic waste. Look for dish soap refill options or brands using recycled plastic."
+  },
+  {
+    "id": "1019",
+    "name": "Laundry Powder Box",
+    "category": "Cleaning",
+    "materials": {"Cardboard": 100},
+    "ecoScore": "medium",
+    "qrcode": "1000000000018",
+    "full_description": "Laundry Powder Box is made from recyclable cardboard, making it a better option than plastic jugs. Cardboard packaging is biodegradable and widely accepted in recycling programs."
+  },
+  {
+    "id": "1020",
+    "name": "Hand Sanitizer Bottle",
+    "category": "Personal Care",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000019",
+    "full_description": "Hand Sanitizer Bottle is made from PET plastic. The compact size is convenient, but the packaging is single-use. Refill options and recycling are recommended for reducing waste."
+  },
+  {
+    "id": "1021",
+    "name": "Energy Drink Can",
+    "category": "Beverages",
+    "materials": {"Aluminum": 100},
+    "ecoScore": "high",
+    "qrcode": "1000000000020",
+    "full_description": "Energy Drink Can is made from 100% aluminum, which is highly recyclable and retains its value in recycling streams. Aluminum cans are an eco-friendly choice for beverages."
+  },
+  {
+    "id": "1022",
+    "name": "Instant Noodles Pack",
+    "category": "Food",
+    "materials": {"Plastic": 80, "Cardboard": 20},
+    "ecoScore": "low",
+    "qrcode": "1000000000021",
+    "full_description": "Instant Noodles Pack uses a plastic wrapper with a cardboard sleeve. The cardboard is recyclable, but the plastic wrapper is not. Consider brands with compostable or recyclable packaging."
+  },
+  {
+    "id": "1023",
+    "name": "Rice Bag",
+    "category": "Food",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000022",
+    "full_description": "Rice Bag is made from durable plastic for strength and moisture resistance. Most rice bags are not accepted in curbside recycling, so reuse or proper disposal is important."
+  },
+  {
+    "id": "1024",
+    "name": "Cooking Oil Bottle",
+    "category": "Food",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000023",
+    "full_description": "Cooking Oil Bottle is made from PET plastic, which is recyclable but energy-intensive to produce. Ensure the bottle is clean before recycling to avoid contamination."
+  },
+  {
+    "id": "1025",
+    "name": "Ketchup Bottle",
+    "category": "Food",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000024",
+    "full_description": "Ketchup Bottle uses PET plastic for squeezability and freshness. While recyclable, sticky residue can hinder recycling. Rinse thoroughly before disposal."
+  },
+  {
+    "id": "1026",
+    "name": "Mayonnaise Jar",
+    "category": "Food",
+    "materials": {"Glass": 80, "Plastic Lid": 20},
+    "ecoScore": "highest",
+    "qrcode": "1000000000025",
+    "full_description": "Mayonnaise Jar uses a glass body and plastic lid. Glass is infinitely recyclable and can be reused for storage. The plastic lid should be separated before recycling."
+  },
+  {
+    "id": "1027",
+    "name": "Biscuits Packet",
+    "category": "Snacks",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000026",
+    "full_description": "Biscuits Packet is made from flexible plastic for freshness. These wrappers are not recyclable in most municipal programs. Look for brands with compostable packaging."
+  },
+  {
+    "id": "1028",
+    "name": "Ice Cream Tub",
+    "category": "Frozen Food",
+    "materials": {"Cardboard": 80, "Plastic Lid": 20},
+    "ecoScore": "medium",
+    "qrcode": "1000000000027",
+    "full_description": "Ice Cream Tub uses a cardboard body with a plastic lid. The cardboard is often lined with plastic, making recycling difficult. Check local guidelines for disposal."
+  },
+  {
+    "id": "1029",
+    "name": "Shampoo Sachet",
+    "category": "Personal Care",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000028",
+    "full_description": "Shampoo Sachet is a single-use plastic packet. While convenient for travel, these sachets contribute to microplastic pollution and are not recyclable."
+  },
+  {
+    "id": "1030",
+    "name": "Toothbrush Pack",
+    "category": "Personal Care",
+    "materials": {"Plastic": 70, "Cardboard": 30},
+    "ecoScore": "low",
+    "qrcode": "1000000000029",
+    "full_description": "Toothbrush Pack uses a plastic blister with a cardboard backing. The cardboard is recyclable, but the plastic is not. Some brands now offer fully compostable packaging."
+  },
+  {
+    "id": "1031",
+    "name": "Coffee Jar",
+    "category": "Beverages",
+    "materials": {"Glass": 90, "Plastic Lid": 10},
+    "ecoScore": "highest",
+    "qrcode": "1000000000030",
+    "full_description": "Coffee Jar is made from thick glass with a plastic lid. Glass jars are reusable and recyclable, making this a sustainable choice for coffee lovers."
+  },
+  {
+    "id": "1032",
+    "name": "Tea Box",
+    "category": "Beverages",
+    "materials": {"Cardboard": 95, "Plastic": 5},
+    "ecoScore": "medium",
+    "qrcode": "1000000000031",
+    "full_description": "Tea Box uses cardboard for the outer packaging and a thin plastic wrap for freshness. The cardboard is widely recyclable, but the plastic wrap is not."
+  },
+  {
+    "id": "1033",
+    "name": "Sugar Bag",
+    "category": "Food",
+    "materials": {"Paper": 100},
+    "ecoScore": "medium",
+    "qrcode": "1000000000032",
+    "full_description": "Sugar Bag is made from paper, which is biodegradable and recyclable. Paper packaging is a sustainable choice for dry goods."
+  },
+  {
+    "id": "1034",
+    "name": "Jam Jar",
+    "category": "Food",
+    "materials": {"Glass": 85, "Metal Lid": 15},
+    "ecoScore": "highest",
+    "qrcode": "1000000000033",
+    "full_description": "Jam Jar uses a glass body and metal lid, both of which are recyclable. Glass jars can be repurposed for storage or crafts after use."
+  },
+  {
+    "id": "1035",
+    "name": "Honey Bottle",
+    "category": "Food",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000034",
+    "full_description": "Honey Bottle is made from squeezable PET plastic. While convenient, these bottles are single-use and should be rinsed and recycled where possible."
+  },
+  {
+    "id": "1036",
+    "name": "Peanut Butter Jar",
+    "category": "Food",
+    "materials": {"Plastic": 80, "Paper Label": 20},
+    "ecoScore": "low",
+    "qrcode": "1000000000035",
+    "full_description": "Peanut Butter Jar uses a plastic body with a paper label. The label is recyclable, but the plastic jar should be cleaned before recycling."
+  },
+  {
+    "id": "1037",
+    "name": "Cheese Wrapper",
+    "category": "Dairy",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000036",
+    "full_description": "Cheese Wrapper is made from flexible plastic, which is not recyclable. Look for cheese brands using wax or compostable paper alternatives."
+  },
+  {
+    "id": "1038",
+    "name": "Milk Bottle",
+    "category": "Dairy",
+    "materials": {"HDPE Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000037",
+    "full_description": "Milk Bottle is made from HDPE plastic, which is recyclable in many areas. Rinse thoroughly before recycling to avoid contamination."
+  },
+  {
+    "id": "1039",
+    "name": "Butter Wrapper",
+    "category": "Dairy",
+    "materials": {"Foil": 50, "Paper": 50},
+    "ecoScore": "medium",
+    "qrcode": "1000000000038",
+    "full_description": "Butter Wrapper uses a combination of foil and paper. The paper is biodegradable, and the foil can be recycled if clean and balled up."
+  },
+  {
+    "id": "1040",
+    "name": "Frozen Pizza Box",
+    "category": "Frozen Food",
+    "materials": {"Cardboard": 90, "Plastic": 10},
+    "ecoScore": "medium",
+    "qrcode": "1000000000039",
+    "full_description": "Frozen Pizza Box uses cardboard for structure and a thin plastic wrap for freshness. The box is recyclable if clean; the plastic wrap should be disposed of in trash."
+  },
+  {
+    "id": "1041",
+    "name": "Frozen Berries Bag",
+    "category": "Frozen Food",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000040",
+    "full_description": "Frozen Berries Bag is made from flexible plastic, which is not accepted in most curbside recycling programs. Some stores accept these bags for recycling."
+  },
+  {
+    "id": "1042",
+    "name": "All-Purpose Cleaner",
+    "category": "Cleaning",
+    "materials": {"PET Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000041",
+    "full_description": "All-Purpose Cleaner is packaged in PET plastic. While recyclable, refill options or concentrated formulas in paper packaging are more sustainable."
+  },
+  {
+    "id": "1043",
+    "name": "Floor Cleaner Pouch",
+    "category": "Cleaning",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000042",
+    "full_description": "Floor Cleaner Pouch uses flexible plastic, which is not recyclable. Concentrated or refillable options are recommended for reducing waste."
+  },
+  {
+    "id": "1044",
+    "name": "Toilet Paper Pack",
+    "category": "Personal Care",
+    "materials": {"Plastic": 90, "Paper": 10},
+    "ecoScore": "low",
+    "qrcode": "1000000000043",
+    "full_description": "Toilet Paper Pack uses plastic wrap and paper rolls. The wrap is not recyclable, but the paper core is. Look for brands with paper or compostable packaging."
+  },
+  {
+    "id": "1045",
+    "name": "Hand Wash Refill",
+    "category": "Personal Care",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000044",
+    "full_description": "Hand Wash Refill comes in a flexible plastic pouch, reducing packaging weight but not recyclable. Some brands offer refills in paper-based pouches."
+  },
+  {
+    "id": "1046",
+    "name": "Face Wipes Pack",
+    "category": "Personal Care",
+    "materials": {"Plastic": 95, "Paper": 5},
+    "ecoScore": "low",
+    "qrcode": "1000000000045",
+    "full_description": "Face Wipes Pack uses mostly plastic with a small paper label. The wipes themselves may contain plastic fibers. Look for compostable or biodegradable alternatives."
+  },
+  {
+    "id": "1047",
+    "name": "Tonic Water Can",
+    "category": "Beverages",
+    "materials": {"Aluminum": 100},
+    "ecoScore": "high",
+    "qrcode": "1000000000046",
+    "full_description": "Tonic Water Can is made from aluminum, which is highly recyclable and energy-efficient to process. Aluminum cans are among the most sustainable beverage packaging options."
+  },
+  {
+    "id": "1048",
+    "name": "Sparkling Water Glass",
+    "category": "Beverages",
+    "materials": {"Glass": 100},
+    "ecoScore": "highest",
+    "qrcode": "1000000000047",
+    "full_description": "Sparkling Water Glass bottle is made from thick glass, ideal for reuse and recycling. Glass is inert and preserves taste, making it a premium packaging choice."
+  },
+  {
+    "id": "1049",
+    "name": "Protein Bar Wrapper",
+    "category": "Snacks",
+    "materials": {"Plastic": 100},
+    "ecoScore": "low",
+    "qrcode": "1000000000048",
+    "full_description": "Protein Bar Wrapper is made from multi-layer plastic, which is not recyclable. Some brands now offer compostable wrappers as a more sustainable alternative."
+  },
+  {
+    "id": "1050",
+    "name": "Granola Pouch",
+    "category": "Snacks",
+    "materials": {"Plastic": 90, "Paper": 10},
+    "ecoScore": "low",
+    "qrcode": "1000000000049",
+    "full_description": "Granola Pouch uses a plastic body with a paper label. The pouch is not recyclable, but the label is. Look for brands using paper or compostable pouches."
+  }
+]
