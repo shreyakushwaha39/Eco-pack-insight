@@ -197,6 +197,11 @@ button:hover {
   color: var(--green-dark) !important;
 }
 
+/* Make all buttons show pointer cursor */
+button, button:active, button:focus, button:hover {
+  cursor: pointer !important;
+}
+
 #compareSelect {
   margin: 1em 0;
   display: flex;
@@ -426,10 +431,64 @@ canvas {
   gap: 1.2em;
 }
 
-/* Optional: make button inside box stand out */
-.action-box button {
-  font-size: 1.25em !important;
+/* Team Modal Styles */
+#teamModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(44,62,80,0.25);
+  justify-content: center;
+  align-items: center;
+}
+#teamModal.active {
+  display: flex;
+}
+.team-modal-box {
+  background: #fff;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 32px #b0bec540;
+  max-width: 700px;
+  width: 98vw;
+  margin: 0 auto;
+  padding: 3em 2.5em 2.5em 2.5em;
+  text-align: center;
+  position: relative;
+}
+.team-modal-box .close {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  font-size: 2.5em;
+  color: #e57373;
+  cursor: pointer;
+  z-index: 10;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+.team-member img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px #b0bec540;
+  margin-bottom: 1.2em;
+  border: none;
+}
+.team-member span {
   font-weight: 700;
-  border-radius: 12px;
-  padding: 0.8em 2em;
+  color: #1976d2;
+  font-size: 1.25em;
+  margin-top: 0.5em;
 }
