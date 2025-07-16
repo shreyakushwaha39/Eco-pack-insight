@@ -15,7 +15,7 @@ HTML | CSS | JavaScript | VS Code | Github
 
 ## 🤝 Team Codezilla
 - Shreya Kushwaha[https://github.com/shreyakushwaha39]
-- Dev Varshney[]
+- Dev Varshney[https://github.com/Dev-varshney13]
 - Nisha Raghav[https://github.com/Nishu-2006]
 
-🔗 Live Site: []
+🔗 Live Site: [https://shreyakushwaha39.github.io/Eco-pack-insight/]
