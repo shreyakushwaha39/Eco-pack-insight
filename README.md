@@ -3,24 +3,22 @@
 EcoPack Insight is a web-based eco-friendly packaging analyzer that helps users understand and evaluate the environmental impact of packaging materials. With an intuitive interface and features like product details,comparison of products,show eco scores and disposal guide,generate & scan qr codes.This tool aims to promote responsible consumer behavior and sustainable design.
 
 ## 🚀 Live Demo
-[EcoPack Insight Website]() <!-- Replace with actual link -->
+[EcoPack Insight Website](https://shreyakushwaha39.github.io/Eco-pack-insight/) <!-- Replace with actual link -->
 
 ---
 
 ## 💡 Features
-- 🔍 Upload images of packaging to analyze materials
+- 🔍 Search products of packaging to analyze materials
+- 📄 comparison reports of two products with their disposal guide
 - 📊 Get Eco Score based on material composition
-- 📄 Download comparison reports in PDF format
-- 🌍 Product database with common material breakdowns
-- 📱 Fully responsive and user-friendly UI
+- 🌍 Generate & scan qr codes to check product's sustainbility
+- 📱 Customer-friendly UI
 
 ---
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js / Express (if applicable)
-- **UI/UX**: Figma (Designathon prototype)
-- **Other Tools**: GitHub, Canva, VS Code
+- **Other Tools**: GitHub, VS Code
 
 ---
 
@@ -30,7 +28,7 @@ To help individuals and businesses make informed packaging decisions by understa
 ---
 
 ## 🏁 Hackathon
-This project was built as part of **AlgoVerse Hackathon 2025** organized by [HackWithIndia](https://hackwithindia.tech). Though we didn’t make it to the top 20, we’re proud to have ranked in the **Top 70 teams** out of hundreds of talented participants.
+This project was built as part of **AlgoVerse Hackathon 2025** organized by [HackWithIndia](https://hackwithindia.tech). Though we didn’t make it to the top 20, we’re proud to have ranked in the **Top 70 teams** out of total 375 of talented participants.
 
 > Made with passion by **Team Codezilla**
 
@@ -38,8 +36,8 @@ This project was built as part of **AlgoVerse Hackathon 2025** organized by [Hac
 
 ## 🤝 Contributors
 - [Shreya Kushwaha](https://github.com/yourusername)
-- [Teammate 2]
-- [Teammate 3]
+- [Dev Varshney]
+- [Nisha Raghav]
 
 ---
 
