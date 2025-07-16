@@ -1,9 +1,9 @@
 # 🌿 EcoPack Insight
 
-EcoPack Insight is a web-based eco-friendly packaging analyzer that helps users understand and evaluate the environmental impact of packaging materials. With an intuitive interface and features like sustainability scoring, the tool aims to promote responsible consumer behavior and sustainable design.
+EcoPack Insight is a web-based eco-friendly packaging analyzer that helps users understand and evaluate the environmental impact of packaging materials. With an intuitive interface and features like product details,comparison of products,show eco scores and disposal guide,generate & scan qr codes.This tool aims to promote responsible consumer behavior and sustainable design.
 
 ## 🚀 Live Demo
-[EcoPack Insight Website](https://your-github-pages-link.com) <!-- Replace with actual link -->
+[EcoPack Insight Website]() <!-- Replace with actual link -->
 
 ---
 
