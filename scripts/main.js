@@ -332,7 +332,8 @@ function toggleQrScan() {
       // Try to match product by qrcode
       const product = productsData.find(p => p.qrcode === qrCodeMessage);
       if (product) {
-        qrResultDiv.innerHTML += `<br><b>Product:</b> ${product.name}<br><a href="product-pages/${product.id}.html" target="_blank">View Product Page</a>`;
+        qrResultDiv.innerHTML += `<br><b>Product:</b> ${product.name}<br>Opening product details...`;
+        showProductModal(product.id); // Auto-open modal
       } else {
         qrResultDiv.innerHTML += '<br>No matching product found.';
       }
@@ -387,4 +388,11 @@ function showDisposalGuide() {
 function closeDisposalModal() {
   document.getElementById('disposalModal').style.display = 'none';
   document.getElementById('productModal').style.display = 'block';
+}
+
+function showTeamModal() {
+  document.getElementById('teamModal').classList.add('active');
+}
+function closeTeamModal() {
+  document.getElementById('teamModal').classList.remove('active');
 }
